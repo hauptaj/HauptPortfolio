@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrea Haupt | Contact</title>
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Overpass|Oswald|Pacifico" rel="stylesheet">
+</head>
+<body>
+
+	<div class="header">
+		<h1>Andrea Haupt</h1>
+		<img src="Images/Detroit.jpg">
+	</div>
+				
+	<ul id="navigation">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="#" class="on">Contact</a></li>
+	</ul>
+
+	<div class="page">
+
+		<!-- <div id="contact-form">    
+
+			<form id="contact" method="post" action="">
+				<fieldset>    
+					<legend>Contact me!</legend>
+
+					<label for="name">Name</label>
+					<input type="text" name="name" placeholder="Full Name">
+
+					<label for="email">E-mail</label>
+					<input type="email" name="email" placeholder="name@domain.com">
+
+					<label for="phone">Phone</label>
+					<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
+
+					<label for="message">Message</label>
+					<textarea id="message" placeholder="Your message here" rows="7" cols="30"></textarea>
+    </textarea>
+    <input value="Send email" type="submit">
+
+				</fieldset>
+			</form>
+
+		</div> -->
+
+		<div id="contact-area">
+			
+			<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+				
+				<label for="City">City:</label>
+				<input type="text" name="City" id="City" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+			
+			<div style="clear: both;"></div>
+	</div>	

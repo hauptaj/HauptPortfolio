@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------END OF CLEARFIX ----------*/
+
+body {
+	background-position: center;
+	font-family: 'Overpass', sans-serif;
+	line-height: 1.4em;
+	margin-left: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.header {
+	position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.header h1 {
+    color: #000;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: 100px;
+    font-size: 400%;
+    font-family: 'Pacifico', cursive;
+} 
+
+.header img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+p {
+	margin-bottom: 14px;
+	margin-right: 20px;
+}
+
+ol {
+	margin-bottom: 14px;
+	margin-left: 50px;
+	list-style-type: decimal-leading-zero;
+}
+
+#navigation {
+	background-color: black;
+	height: 50px;
+	width: 100%;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 250px;
+	z-index: 1;
+}
+
+#navigation ul {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	top: 250px;
+	text-align: center;
+	list-style-type: none;
+    background-color: #333;
+}
+
+#navigation li {
+	display: inline;
+	float: left;
+	font-family: "Oswald", serif;
+}
+
+#navigation li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+}
+
+#navigation li a:hover{
+	background-color: grey;
+}
+
+#navigation li a:active {
+	background-color: black;
+}
+
+.on {
+	background-color: green;
+}
+
+.page {
+	background: #fff;
+	padding: 15px;
+	position: absolute;
+	margin-top: 20px;
+	top: 270px;
+	left: 0px;
+	width: 100%;
+}
+
+blockquote {
+	position: relative;
+	float: right;
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-bottom: 14px;
+	margin-right: 20px;
+	width: 275px;
+	font-size: 130%;
+	font-style: italic;
+	font-family: Georgia, Times, serif;
+	/* margin: 0px 0px 10px 10px; */
+	padding: 10px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	/* z-index: -1; */
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+article {
+	padding: 15px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+a:link {
+	text-decoration: none;
+	color: #888;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: maroon;
+}
+
+.images {
+	display: inline;
+	margin: 10px 5px 10px 5px;
+	border-radius: 50%;
+	/*padding: 0px 5px 0px 5px;*/
+	box-shadow: 10px 10px 5px #888;
+}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	border-radius: 5px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
