@@ -4,6 +4,18 @@
 	<title>Andrea Haupt | Contact</title>
 	<link href="styles.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Overpass|Oswald|Pacifico" rel="stylesheet">
+	
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! Please fill out our form";
+    }
+}
+</script>
+
+
 </head>
 <body>
 
@@ -20,30 +32,10 @@
 
 	<div class="page">
 
-		<!-- <div id="contact-form">    
+<body onload="myFunction()">
 
-			<form id="contact" method="post" action="">
-				<fieldset>    
-					<legend>Contact me!</legend>
+<p id="demo"></p>
 
-					<label for="name">Name</label>
-					<input type="text" name="name" placeholder="Full Name">
-
-					<label for="email">E-mail</label>
-					<input type="email" name="email" placeholder="name@domain.com">
-
-					<label for="phone">Phone</label>
-					<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
-
-					<label for="message">Message</label>
-					<textarea id="message" placeholder="Your message here" rows="7" cols="30"></textarea>
-    </textarea>
-    <input value="Send email" type="submit">
-
-				</fieldset>
-			</form>
-
-		</div> -->
 
 		<div id="contact-area">
 			

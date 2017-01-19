@@ -49,6 +49,7 @@ table {
 
 /* --------END OF CLEARFIX ----------*/
 
+
 body {
 	background-position: center;
 	font-family: 'Overpass', sans-serif;
@@ -213,13 +214,43 @@ a:active {
 	color: maroon;
 }
 
-.images {
+.pic {
+  border: 10px solid #fff;  
+  float: left;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  overflow: hidden;
+  
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+
+/*GROW*/
+.grow img {
+  display: inline;
+	margin: 10px 5px 10px 5px;
+	height: 250px;
+  width: 250px;
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.grow img:hover {
+  width: 400px;
+  height: 400px;
+}
+
+/* .images {
 	display: inline;
 	margin: 10px 5px 10px 5px;
 	border-radius: 50%;
-	/*padding: 0px 5px 0px 5px;*/
 	box-shadow: 10px 10px 5px #888;
-}
+}*/
 
 #contact-area {
 	width: 600px;
